@@ -1,4 +1,5 @@
 class Admin::ProductsController < ApplicationController
+  before_filter :authenticate
 
   def index
     @products = Product.order(id: :desc).all
@@ -37,4 +38,10 @@ class Admin::ProductsController < ApplicationController
     )
   end
 
+  def authenticate 
+    authenticate_or_request_with_http_basic do |username, password| 
+      username == "Jungle" && password == "book"
+    end
+  end 
+  
 end

@@ -1,0 +1,8 @@
+<tr>
+<td> <%= @details.product.name %> </td>
+<td> <%= image_tag  @details.product.image.tiny%> </td>
+<td> <%= @details.product.description %> </td>
+<td> Price is: <%= humanized_money_with_symbol @details.item_price_cents  / 100.0 %> </td>
+<td> <%= @details.quantity %> </td>
+<td>Total: <%= humanized_money_with_symbol @details.total_price_cents / 100.0 %> </td>
+</tr>

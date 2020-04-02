@@ -51,6 +51,16 @@ main section.categories-show {
         font-size: 0.8em;
       }
 
+      div.quantity {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        background-color: green;
+        font-size: 1.2em;
+        border-radius: 10px;
+        color: white;
+      }
+
       &:hover {
 
         border-color: #999;
