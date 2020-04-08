@@ -3,7 +3,7 @@ require 'rails_helper'
 
 RSpec.describe Product, type: :model do
 subject {
-  Product.new(name: "Test", price: 10, quantity: 100, category: "Apparel")
+  Product.new(name: "Test", price: 10, quantity: 100, category: @category)
 }
   describe 'Validations' do
     #validates product 
@@ -12,7 +12,7 @@ subject {
       subject.name = nil
       subject.quantity = 100 
       subject.price = 10
-      subject.category = "Apparel"
+      subject.category = @category
       expect(subject).to_not be_valid
     end
 
@@ -20,7 +20,7 @@ subject {
       subject.name = "Test"
       subject.quantity = nil 
       subject.price = 10
-      subject.category = "Apparel"
+      subject.category = @category
       expect(subject).to_not be_valid
     end
 
@@ -28,7 +28,7 @@ subject {
       subject.name = "Test"
       subject.quantity = 100 
       subject.price = nil
-      subject.category = "Apparel"
+      subject.category = @category
       expect(subject).to_not be_valid
     end
 
