@@ -2,7 +2,12 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
+### Main Page 
+  !["screenshot of main page"](https://raw.githubusercontent.com/alextheprogrammer21/jungle-rails/master/Images/Screen%20Shot%202020-04-08%20at%201.41.34%20PM.png)
 
+  ### My Cart
+
+  !["screenshot of main page"](https://raw.githubusercontent.com/alextheprogrammer21/jungle-rails/master/Images/Screen%20Shot%202020-04-08%20at%201.42.10%20PM.png)
 ## Setup
 
 1. Run `bundle install` to install dependencies
